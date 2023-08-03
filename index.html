@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Landing</title>
+    <link rel="shortcut icon" href="./images_icons/letter-s fav.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-roboto{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'pri-color': '#A855F7',
+              }
+            }
+          }
+        }
+      </script>
+</head>  
+<body class=" bg-stone-900	h-auto font-roboto">
+    <header class="py-3  lg:px-28">
+        <nav class=" fixed w-full z-20 top-0 left-0 bg-stone-900 ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="" class="flex items-center">
+                <img src="./images_icons/letter-s (1).png" class="bg-[#D8B4FE] p-2 rounded-full mr-3" alt=" Logo">
+            </a>
+            <div class="flex gap-x-3 items-center md:order-2">
+                <div class="hidden md:block lg:block">
+                <button type="button" class=" text-black bg-[#D8B4FE] hover:bg-purple-400 font-medium rounded-lg text-sm px-5 py-3 text-center mr-3 md:mr-0 ">Log In</button>
+                <button type="button" class=" text-black bg-[#D8B4FE] hover:bg-purple-400 font-medium rounded-lg text-sm px-5 py-3 text-center mr-3 md:mr-0 ">Sign Up</button>
+                
+                </div>
+                <div class="dropdown dropdown-end block md:hidden lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-[#D8B4FE]" aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                            </svg>
+                        </button>
+                    </label>
+                    <ul tabindex="0" class="menu menu-lg  dropdown-content mt-3 z-[1] py-2  bg-stone-900 text-white rounded-box w-[400px] md:w-[450px] ">
+                      <li><a class="hover:bg-[#D8B4FE] ">Features</a></li>
+                      <li><a  class="hover:bg-[#D8B4FE]">Pricing</a></li>
+                      <li><a  class="hover:bg-[#D8B4FE]">Help</a></li>
+                      <li><a  class="hover:bg-[#D8B4FE]">Blog</a></li>
+                      <li><a  class="hover:bg-[#D8B4FE]">About Us</a></li>
+                      <li><a  class="hover:bg-[#D8B4FE]">Log In</a></li>
+                      <li><a  class="hover:bg-[#D8B4FE]">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg  md:flex-row md:space-x-8 md:mt-0 ">
+                <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white  " aria-current="page">Features</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded ">Pricing</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white ">Help</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white ">Blog</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white ">About Us</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main class="px-5 lg:px-36">
+        <section>
+            <div class="flex flex-col md:flex-row lg:flex-row  justify-between">
+                <div class="pt-20 lg:pt-44 flex flex-col gap-5 lg:gap-10 ">
+                    <div><p class="text-[#D8B4FE] font-light  text-base lg:text-3xl">Start saving Money</p></div>
+                    <div><h3 class="text-[#D8B4FE] text-2xl lg:text-7xl font-bold"  >Smart Credit Card <br> For Your Daily Life</h3></div>
+                    <div class=""><button type="button" class=" text-black bg-[#D8B4FE] hover:bg-purple-400	  font-extrabold rounded-lg  lg:text-xl px-3 lg:px-5 py-2 lg:py-3 text-center mr-3 md:mr-0 flex items-center gap-2 lg:gap-4 ">Download <span><img class="h-[18px]" src="./images_icons/downloads.png" alt=""></span></button></div>
+                </div>
+                <div class=" md:pr-0 lg:pr-0"><img class="
+                     lg:pt-24" src="./images_icons/use_as_png-removebg-preview.png" alt=""></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
